@@ -108,8 +108,7 @@ TEST(GuesserTest, lock_does_not_reset_after_lock)
 {
     Guesser g("winston");
 
-    g.match("wwwwww"); // locks immediately
-
+    g.match("wwwwww"); 
     ASSERT_FALSE(g.match("winston"));
 }
 
@@ -117,6 +116,6 @@ TEST(GuesserTest, small_distance_does_not_lock)
 {
     Guesser g("winston");
 
-    ASSERT_FALSE(g.match("winstox")); // small diff
-    ASSERT_TRUE(g.match("winston"));  // should still succeed
+    ASSERT_FALSE(g.match("winstox")); 
+    ASSERT_TRUE(g.match("winston"));  
 }
