@@ -118,4 +118,3 @@ TEST(GuesserTest, small_distance_does_not_lock)
 
     ASSERT_FALSE(g.match("winstox")); 
     ASSERT_TRUE(g.match("winston"));  
-}
